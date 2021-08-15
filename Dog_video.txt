@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>	DOG</title>
+	</head>
+	<body>
+		<p></p>
+			<h1></h1>
+			<h3></h3>
+			<h6></h6>
+				<footer></footer>
+				<main></main>
+				<nav>
+					<a href="assignment.html">Home</a>	|
+					<a href="dog.html">Dog Picture</a> |
+					<a href="https://www.youtube.com/watch?v=lHJN6IO6jYI">Dog video</a>
+					</nav>
+				
+
+	</body>
+</html>
