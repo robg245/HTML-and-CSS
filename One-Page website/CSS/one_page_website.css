@@ -1,0 +1,51 @@
+#home {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    float: inline-start;
+    display: block;
+}
+.reservations{
+    width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+ 
+    
+}
+.reservations form {
+   
+    color: #8D8E8f;
+    padding: 12px 12px;
+    width: 70%;
+    border: 1px solid #808080;
+    margin: 2% auto;
+    border-radius: 7px;
+  
+}
+  
+.reservations input[type="text"] {
+    color: #8D8E8F;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid #090B0D;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424559;
+    border-left: 1px solid #090B0D;
+    margin: 10px 1em;
+    border-radius: 7px;
+    
+}
+.terms {
+    margin: 30px 1px 0 0 ;
+    padding-left: 52px;
+    font-size: 14px;
+    line-height: 5px;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    position: relative;
+    display: inline;
+    float: right;
+    margin-top: 13%;
+}
