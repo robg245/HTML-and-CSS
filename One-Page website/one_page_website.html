@@ -3,6 +3,7 @@
 		<link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css">
 		<meta charset="utf-8">
 		<title>D&D Industries</title>
+		<script src="./JS/One_Page_Website.js"></script>
 	</head>
 	<body>
 	<!-- NAV -->
@@ -32,31 +33,78 @@
 					<div>
 					
 						<!-- PHOTO CONTAINER 1 -->
-						<div>	
-							<div id="photo-container">
-								<img src="./images/house_1.jpg" alt="Picture of a house">
+						<div class="row">	
+							<div id="photo-container" class="column">
+								<img src="./images/house_1.jpg" alt="Picture of a house" onclick="openModal();currentSlide (1)" class="hover-shadow">
 						<!-- END PHOTO CONTAINER -->
 						
 												<!-- PHOTO CONTAINER 2 -->
 						<div>	
 							<div>
-								<img src="./images/house_2.jpg" alt="Picture of a house">
+								<img src="./images/house_2.jpg" alt="Picture of a house" onclick="openModal();currentSlide (2)" class="hover-shadow">
 						<!-- END PHOTO CONTAINER -->
 						
 												<!-- PHOTO CONTAINER 3 -->
 						<div>	
 							<div>
-								<img src="./images/house_3.jpg" alt="Picture of a house">
+								<img src="./images/house_3.jpg" alt="Picture of a house" onclick="openModal();currentSlide (3)" class="hover-shadow">
 						<!-- END PHOTO CONTAINER -->
 						
 												<!-- PHOTO CONTAINER 4 -->
 						<div>	
 							<div>
-								<img src="./images/house_4.jpg" alt="Picture of a house">
+								<img src="./images/house_4.jpg" alt="Picture of a house" onclick="openModal();currentSlide (1)" class="hover-shadow">
 						<!-- END PHOTO CONTAINER -->
 
 					</div>	
-			</div>		
+			</div>	
+			<!--The Modal/Lightbox -->
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+
+					<div class="mySlides">
+						<div class="numbertext">1 / 4</div>
+						<img src="./images/house_1.jpg" style="width: 120%;">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">2 / 4</div>
+						<img src="./images/house_2.jpg" style="width: 120%;">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">3 / 4</div>
+						<img src="./images/house_3.jpg" style="width: 120%;">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">4 / 4</div>
+						<img src="./images/house_4.jpg" style="width: 120%;">
+					</div>
+				
+
+				<!-- Next/previous controls-->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<!--Caption text-->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+				<!--Thumbnail image controls-->
+				<div class="column">
+					<img class="demo" src="./images/house_1.jpg" onclick="currerntSlide(1)" alt="Nature">
+				</div>
+				<div class="column">
+					<img class="demo" src="./images/house_2.jpg" onclick="currerntSlide(1)" alt="Nature">
+				</div>
+				<div class="column">
+					<img class="demo" src="./images/house_3.jpg" onclick="currerntSlide(1)" alt="Nature">
+				</div>
+				<div class="column">
+					<img class="demo" src="./images/house_4.jpg" onclick="currerntSlide(1)" alt="Nature">
+				</div>
+			</div>	
 		</section>
 		<!-- END GALLERY-->	
 	<!-- RSVP -->
@@ -85,6 +133,7 @@
 								</div>
 						</div>
 					</div>
+				</div>
 				</div>
 			</div>
 			</div>
